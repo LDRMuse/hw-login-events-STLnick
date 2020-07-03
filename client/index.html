@@ -4,20 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
   <title>Login Form</title>
 </head>
 
 <body>
+  <h1>Login Form</h1>
   <form>
     <div>
-      <label for="username" class="screen-reader-text"></label>
-      <input id="username" type="text">
+      <label for="username" class="screen-reader-text">Username</label>
+      <input id="username" type="text" placeholder="Username">
     </div>
     <div>
-      <label for="password" class="screen-reader-text"></label>
-      <input id="password" type="password">
+      <label for="password" class="screen-reader-text">Password</label>
+      <input id="password" type="password" placeholder="Password">
     </div>
     <button type="submit">Login</button>
+    <button type="reset">Reset</button>
   </form>
   <!-- 'Connect' JS to this HTML file. -->
   <script src="./scripts.js"></script>
