@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Update '<title>'. -->
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- TODO: Create a login only form (similar to our registration form).
-        Don't copy/paste, retype as much as possible without looking. Maybe write it with Emmet -->
-    <!-- 'Connect' JS to this HTML file. -->
-    <script src="./scripts.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Form</title>
+</head>
+
+<body>
+  <form>
+    <div>
+      <label for="username" class="screen-reader-text"></label>
+      <input id="username" type="text">
+    </div>
+    <div>
+      <label for="password" class="screen-reader-text"></label>
+      <input id="password" type="password">
+    </div>
+    <button type="submit">Login</button>
+  </form>
+  <!-- 'Connect' JS to this HTML file. -->
+  <script src="./scripts.js"></script>
+</body>
+
 </html>

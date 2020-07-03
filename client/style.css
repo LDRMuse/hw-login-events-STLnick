@@ -3,3 +3,15 @@
   2. Maybe set up your type scaling.
   3, Use flexbox to align and center stuff, etc.
 */
+
+
+
+
+
+
+
+.screen-reader-text {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
