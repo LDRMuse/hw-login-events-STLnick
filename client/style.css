@@ -4,10 +4,10 @@
   3, Use flexbox to align and center stuff, etc.
 */
 :root {
-  --primary-color: #17A440;
-  --secondary-color: #A1D0A2;
-  --tertiary-color: #D9F9D9;
-  --accent-color: #92ABE1;
+  --primary-color: #17a440;
+  --secondary-color: #a1d0a2;
+  --tertiary-color: #d9f9d9;
+  --accent-color: #92abe1;
 }
 
 html {
@@ -27,7 +27,9 @@ h1 {
   text-shadow: var(--tertiary-color) 3px 3px;
 }
 
-form, input, button {
+form,
+input,
+button {
   border-radius: 5px;
 }
 
