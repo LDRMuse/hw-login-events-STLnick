@@ -1,4 +1,4 @@
-import { Input, Title } from './components'
+import { Button, Input, Title } from './components'
 
 const inputProps = {
   Input: [
@@ -13,17 +13,25 @@ const inputProps = {
   ]
 }
 
-// const buttonProps = {
-//   Button: [
+const buttonProps = {
+  Button: [
+    {
+      type: 'Submit',
+      id: 'submitBtn'
+    },
+    {
+      type: 'Reset',
+      id: 'resetBtn'
+    }
+  ]
+}
 
-//   ]
-// }
-
-function render () {
+function render() {
   document.querySelector('#root').innerHTML = `
     ${Title()}
     <form>
       ${Input(inputProps.Input)}
+      ${Button(buttonProps.Button)}
     </form>
   `
 
