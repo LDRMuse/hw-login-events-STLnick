@@ -1,6 +1,6 @@
 import { Button, Input, Title } from './components'
 
-const inputProps = {
+const props = {
   Input: [
     {
       type: 'text',
@@ -10,10 +10,7 @@ const inputProps = {
       type: 'password',
       label: 'Password'
     }
-  ]
-}
-
-const buttonProps = {
+  ],
   Button: [
     {
       type: 'Submit',
@@ -30,8 +27,8 @@ function render() {
   document.querySelector('#root').innerHTML = `
     ${Title()}
     <form>
-      ${Input(inputProps.Input)}
-      ${Button(buttonProps.Button)}
+      ${Input(props.Input)}
+      ${Button(props.Button)}
     </form>
   `
 
