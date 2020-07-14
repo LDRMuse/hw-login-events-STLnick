@@ -47,7 +47,14 @@ div:last-of-type {
 
 input {
   border: 2px solid var(--accent-color);
-  margin: 0.5rem;
+  font-size: 1em;
+  margin: 0.75rem;
+  outline: none;
+  padding: 0.5em;
+}
+
+input:focus {
+  box-shadow: 0 0 2px 4px var(--accent-color);
 }
 
 button {
@@ -55,9 +62,18 @@ button {
   border: 2px solid var(--primary-color);
   box-shadow: 3px 3px 3px var(--primary-color);
   color: var(--primary-color);
+  font-size: 1.25em;
   font-weight: bold;
-  margin-bottom: 10px;
-  width: 4rem;
+  margin: 1em;
+  outline: none;
+  padding: 0.5em 1em;
+  transition: background, box-shadow 0.4s;
+}
+
+button:focus,
+button:hover {
+  background: var(--secondary-color);
+  box-shadow: 0 0 3px 4px var(--primary-color);
 }
 
 .container {
