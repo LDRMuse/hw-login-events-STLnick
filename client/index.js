@@ -1,13 +1,29 @@
-import { Password, ResetButton, SubmitButton, Title, Username } from './components'
+import { Input, Title } from './components'
 
-function render() {
+const inputProps = {
+  Input: [
+    {
+      type: 'text',
+      label: 'Username'
+    },
+    {
+      type: 'password',
+      label: 'Password'
+    }
+  ]
+}
+
+// const buttonProps = {
+//   Button: [
+
+//   ]
+// }
+
+function render () {
   document.querySelector('#root').innerHTML = `
     ${Title()}
     <form>
-      ${Username()}
-      ${Password()}
-      ${SubmitButton()}
-      ${ResetButton()}
+      ${Input(inputProps.Input)}
     </form>
   `
 
