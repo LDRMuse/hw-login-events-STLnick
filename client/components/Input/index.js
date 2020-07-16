@@ -1,10 +1,10 @@
-function render (inputs) {
-  return inputs.reduce((acc, input) => {
-    return acc + `<div>
+function render(inputs) {
+  return inputs.map(input => {
+    return `<div>
     <label for="${input.label.toLowerCase()}" class="screen-reader-text">${input.label}</label>
     <input id="${input.label.toLowerCase()}" type="${input.type}" placeholder="${input.label}">
   </div>`
-  }, '')
+  }).join('')
 }
 
-export default (props) => render(props)
+export default (inputs) => render(inputs)

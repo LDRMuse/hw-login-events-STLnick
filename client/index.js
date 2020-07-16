@@ -1,4 +1,4 @@
-import { Button, Input, Title } from './components'
+import { renderButtons, renderInputs, renderTitle } from './components'
 
 const props = {
   Input: [
@@ -23,12 +23,12 @@ const props = {
   ]
 }
 
-function render() {
+function render({ Input: inputs, Button: buttons }) {
   document.querySelector('#root').innerHTML = `
-    ${Title()}
+    ${renderTitle()}
     <form>
-      ${Input(props.Input)}
-      ${Button(props.Button)}
+      ${renderInputs(inputs)}
+      ${renderButtons(buttons)}
     </form>
   `
 
@@ -50,4 +50,4 @@ function render() {
   })
 }
 
-render()
+render(props)
